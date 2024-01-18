@@ -10,48 +10,74 @@
   </head>
   <body>
     <div class="container">
-        <h3>Kasutajad</h3>
-        <table class="table table-striped table-hover table-sm">
-        <thead class="table-dark">
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Pilt</th>
-                <th scope="col">Eesnimi</th>
-                <th scope="col">Perenimi</th>
-                <th scope="col">Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td><img src="https://picsum.photos/id/685/50/50" class="rounded-circle" alt=""></td>
-                <td>Heli</td>
-                <td>Kopter</td>
-                <td>heli@kopter.ee</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td><img src="https://picsum.photos/id/686/50/50" class="rounded-circle" alt=""></td>
-                <td>Anna</td>
-                <td>Nuga</td>
-                <td>anna@nuga.com</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td><img src="https://picsum.photos/id/682/50/50" class="rounded-circle" alt=""></td>
-                <td>Imre</td>
-                <td>Tard</td>
-                <td>imre@tard.eu</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td><img src="https://picsum.photos/id/683/50/50" class="rounded-circle" alt=""></td>
-                <td>Imre</td>
-                <td>Tard</td>
-                <td>imre@tard.eu</td>
-            </tr>
-        </tbody>
-        </table>
+            <h3>Kasutajad</h3>
+            <nav class="navbar bg-body-tertiary">
+                <a class="navbar-brand"><button type="button" class="btn btn-success"> + Lisa uus</button></a>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </nav>
+            <table class="table table-striped table-hover table-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Pilt</th>
+                    <th scope="col">Eesnimi</th>
+                    <th scope="col">Perenimi</th>
+                    <th scope="col">Email</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><img src="https://picsum.photos/id/685/50/50" class="rounded-circle" alt=""></td>
+                    <td>Heli</td>
+                    <td>Kopter</td>
+                    <td>heli@kopter.ee</td>
+                    <td><button type="button" class="btn btn-warning"> Muuda</button></td>
+                    <td><button type="button" class="btn btn-danger"> Kustuta</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><img src="https://picsum.photos/id/686/50/50" class="rounded-circle" alt=""></td>
+                    <td>Anna</td>
+                    <td>Nuga</td>
+                    <td>anna@nuga.com</td>
+                    <td><button type="button" class="btn btn-warning"> Muuda</button></td>
+                    <td><button type="button" class="btn btn-danger"> Kustuta</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><img src="https://picsum.photos/id/682/50/50" class="rounded-circle" alt=""></td>
+                    <td>Imre</td>
+                    <td>Tard</td>
+                    <td>imre@tard.eu</td>
+                    <td><button type="button" class="btn btn-warning"> Muuda</button></td>
+                    <td><button type="button" class="btn btn-danger"> Kustuta</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td><img src="https://picsum.photos/id/683/50/50" class="rounded-circle" alt=""></td>
+                    <td>Imre</td>
+                    <td>Tard</td>
+                    <td>imre@tard.eu</td>
+                    <td><button type="button" class="btn btn-warning"> Muuda</button></td>
+                    <td><button type="button" class="btn btn-danger"> Kustuta</button></td>
+                </tr>
+            </tbody>
+            </table>
+            <nav>
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Eelmine</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Jargmine</a></li>
+                </ul>
+              </nav>
     </div>
 
 
